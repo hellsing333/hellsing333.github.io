@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color:cornflowerblue;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+ul {
+    color: rgb(254, 254, 254);
+
+}
+p {
+    text-align: center;
+}
