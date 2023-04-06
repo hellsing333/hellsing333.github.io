@@ -1,0 +1,13 @@
+
+body {
+    background-color: black;
+}
+
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
