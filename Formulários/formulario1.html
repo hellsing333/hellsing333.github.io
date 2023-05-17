@@ -8,12 +8,34 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="off">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <p><label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p><label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" pattern="^\[0-9]{4,5}-[0-9]{4}$" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmax">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="iesfbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="iesnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="iesten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+
     </form>
 </body>
 </html>
