@@ -30,6 +30,48 @@
             <input type="checkbox" name="iesnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
             <input type="checkbox" name="iesten" id="iesten"> <label for="iesten">Tênis</label> <br>
         </fieldset>
+        <fieldset>
+            <legend>Coloração</legend>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </fieldset>
+        <fieldset>
+            <legend>Atendimento</legend>
+            <label for="isat">Nível de Satisfação</label>
+            <input type="range" name="sat" id="isat" min="1" max="5" value="5">
+        </fieldset>
+        <fieldset>
+            <legend>Escolha seu Estado</legend>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </fieldset>
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
